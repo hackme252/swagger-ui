@@ -1,0 +1,9 @@
+{
+    "url": "https://raw.githubusercontent.com/hackme252/swagger-ui/main/xss.yaml",
+    "urls": [
+      {
+        "url": "https://raw.githubusercontent.com/hackme252/swagger-ui/main/xss.yaml",
+        "name": "Foo"
+      }
+    ]
+  }
